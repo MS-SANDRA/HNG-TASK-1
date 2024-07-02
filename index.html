@@ -1,139 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Programming Aspirations For The Next 2Years</title>
-    <style>
-      body {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        margin: 1rem 0.5rem;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        align-items: center;
-        min-height: 100vh;
-        background-color: none;
-      }
-      .container {
-        max-width: 700px;
-        width: 100%;
-        background-color: #ffffffe7;
-        padding: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-        border-radius: 7px;
-        text-align: center;
-      }
 
-      .profile-picture {
-        border-radius: 50%;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Programming Aspirations For The Next 2 Years</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+    }
 
-      .profile p,
-      .time-info p,
-      .goals ul {
-        margin: 10px 0;
-      }
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
 
-      .goals ul {
-        list-style-type: none;
-        padding: 1;
-      }
+    h2 {
+      color: #007bff;
+      margin-bottom: 1rem;
+    }
 
-      .goals li {
-        background-color: cyan;
-        margin: 5px 0;
-        padding: 10px;
-        border-radius: 4px;
-      }
+    .profile-picture {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1rem;
+    }
 
-      .links p {
-        margin: 8px 0;
-      }
+    .profile p {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+    }
 
-      .links a {
-        color: #007bff;
-        text-decoration: none;
-      }
+    .time-info p {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+    }
 
-      .links a:hover {
-        text-decoration: underline;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h2>SANDRA CHIZOBA DURU (AdiTech, ICT INSTRUCTOR)</h2>
-      <div class="profile">
-        <img
-          src="./sandra.jpg"
-          alt="Slack Profile Picture"
-          data-testid="slackProfilePicture"
-          class="profile-picture"
-        />
-        <p>Slack Name: <span data-testid="slackDisplayName">@Chizzy</span></p>
-        <p>
-          Slack Email:
-          <span data-testid="slackEmail">chisandra96@gmail.com</span>
-        </p>
-      </div>
-      <div class="time-info">
-        <p>Current Time (UTC): <span data-testid="currentTimeUTC"></span></p>
-        <p>Current Day: <span data-testid="currentDay"></span></p>
-      </div>
-      <div class="My goals">
-        <h2>MY PROGRESSIVE GOALS</h2>
-        <ul>
-          <li>Become a Certified Frontend Developer</li>
-          <li>
-            Grow Immersely in my Programming Skills,<marquee
-              >to help harness the Creativity of Yound Minds</marquee
-            >
-          </li>
-          <li>
-            Advanced Progressively In My Career as an ICT Instructor,<marquee
-              >and Computer science Educator</marquee
-            >
-          </li>
-          <li>
-            Attend both educational and tech conferences to expand my
-            professional network.
-          </li>
-        </ul>
-      </div>
-      <div class="links">
-        <p>
-          <a href="https://hng.tech/learn" data-testid="hngLink">HNG Tech</a>
-        </p>
-        <p>
-          <a href="https://keyword.dog" data-testid="keywordLink"
-            >Keyword Dog</a
-          >
-        </p>
-        <p>
-          <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink"
-            >Scrape Any Web</a
-          >
-        </p>
-      </div>
+    .my-goals {
+      margin: 2rem 0;
+    }
+
+    .goals ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .goals li {
+      background-color: #007bff;
+      color: #ffffff;
+      margin: 0.5rem 0;
+      padding: 1rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .links a {
+      color: #007bff;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Sandra Chizoba Duru (AdiTech, ICT Instructor)</h2>
+    <div class="profile">
+      <img src="./sandra.jpg" alt="Slack Profile Picture" data-testid="slackProfilePicture" class="profile-picture" />
+      <p>Slack Name: <span data-testid="slackDisplayName">@Chizzy</span></p>
+      <p>Slack Email: <span data-testid="slackEmail">chisandra96@gmail.com</span></p>
     </div>
-    <script>
-      function updateTimeAndDay() {
-        const currentTimeUTC = new Date().toUTCString();
-        const currentDay = new Date().toLocaleString("en-US", {
-          weekday: "long",
-        });
+    <div class="time-info">
+      <p>Current Time (UTC): <span data-testid="currentTimeUTC"></span></p>
+      <p>Current Day: <span data-testid="currentDay"></span></p>
+    </div>
+    <div class="my-goals">
+      <h2>My Progressive Goals</h2>
+      <ul class="goals">
+        <li>Become a Certified Frontend Developer</li>
+        <li>Grow immensely in my programming skills to help harness the creativity of young minds</li>
+        <li>Advance progressively in my career as an ICT Instructor and Computer Science Educator</li>
+        <li>Attend both educational and tech conferences to expand my professional network</li>
+      </ul>
+    </div>
+    <div class="links">
+      <p><a href="https://hng.tech/learn" data-testid="hngLink"><i class="fas fa-external-link-alt"></i> HNG Tech</a>
+      </p>
+      <p><a href="https://keyword.dog" data-testid="keywordLink"><i class="fas fa-external-link-alt"></i> Keyword
+          Dog</a></p>
+      <p><a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink"><i class="fas fa-external-link-alt"></i>
+          Scrape Any Web</a></p>
+    </div>
+  </div>
+  <script>
+    function updateTimeAndDay() {
+      const now = new Date();
+      const currentTimeUTC = now.toUTCString();
+      const currentDay = now.toLocaleString("en-US", { weekday: "long" });
 
-        document.querySelector('[data-testid="currentTimeUTC"]').textContent =
-          currentTimeUTC;
-        document.querySelector('[data-testid="currentDay"]').textContent =
-          currentDay;
-      }
+      document.querySelector('[data-testid="currentTimeUTC"]').textContent = currentTimeUTC;
+      document.querySelector('[data-testid="currentDay"]').textContent = currentDay;
+    }
 
-      // Update time and day immediately and every minute
-      updateTimeAndDay();
-      setInterval(updateTimeAndDay, 60000);
-    </script>
-  </body>
+    updateTimeAndDay();
+    setInterval(updateTimeAndDay, 1000);
+  </script>
+</body>
+
 </html>
